@@ -20,7 +20,7 @@ if (process.env.APP_ENV === "production") {
 }
 
 app.listen(
-  process.env.APP_PORT,
+  process.env.APP_PORT || 5000,
   console.log(
     `Server running in ${process.env.APP_ENV} mode on port ${process.env.APP_PORT}`
   )
