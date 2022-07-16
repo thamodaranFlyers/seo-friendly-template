@@ -6,6 +6,7 @@ import registerIcons from "./config/fa.config";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "./assets/style/main.scss";
+import "antd/dist/antd.min.css";
 
 registerIcons();
 
