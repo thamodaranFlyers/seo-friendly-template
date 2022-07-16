@@ -1,0 +1,38 @@
+{
+  "name": "seo-friendly-template",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Boilerplate code for SPA SEO friendly react application. Served with node and deployed to heroku",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afrze/seo-friendly-template.git"
+  },
+  "keywords": [
+    "react-helmet",
+    "react-ga",
+    "react-snap",
+    "react",
+    "node",
+    "express",
+    "heroku"
+  ],
+  "author": "zubae",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/afrze/seo-friendly-template/issues"
+  },
+  "homepage": "https://github.com/afrze/seo-friendly-template#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
