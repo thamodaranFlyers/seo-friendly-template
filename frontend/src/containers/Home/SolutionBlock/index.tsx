@@ -1,7 +1,6 @@
 import { Col, Row } from 'antd';
-import { motion } from 'framer-motion';
 import { IMAGES } from '../../../assets/img';
-import { AnimatedText, Button, Image, Watermark } from '../../../components';
+import { Image, MotionDiv, Watermark } from '../../../components';
 import './styles.scss';
 
 const SolutionBlock = () => {
@@ -47,7 +46,7 @@ const SolutionBlock = () => {
 						</p>
 						<Row gutter={[10, 10]} className="solution_card_container">
 							<Col xl={12}>
-								<div className="solution_card">
+								<MotionDiv className="solution_card">
 									<h3
 										style={{
 											color: '#17f3a3',
@@ -65,10 +64,10 @@ const SolutionBlock = () => {
 										</li>
 									</ul>
 									<Image className="card_background" src={`${IMAGES.hand}`} />
-								</div>
+								</MotionDiv>
 							</Col>
 							<Col xl={12}>
-								<div className="solution_card">
+								<MotionDiv className="solution_card">
 									<h3
 										style={{
 											color: '#2296f3',
@@ -86,7 +85,7 @@ const SolutionBlock = () => {
 										</li>
 									</ul>
 									<Image className="card_background" src={`${IMAGES.hand}`} />
-								</div>
+								</MotionDiv>
 							</Col>
 						</Row>
 					</Col>

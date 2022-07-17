@@ -2,6 +2,7 @@ import { Col, Row } from 'antd';
 import { motion } from 'framer-motion';
 import { AnimatedText, Button, Watermark } from '../../../components';
 import './styles.scss';
+// import Model from '../../../assets/modal/model';
 
 const HeroIntro = () => {
 	const placeholderText = [
@@ -32,9 +33,13 @@ const HeroIntro = () => {
 		},
 	};
 
+	// const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
+	// const background = `linear-gradient(306deg, ${hue(340)}, ${hue(10)})`;
+
 	return (
 		<Row className="hero_intro" align="middle">
-			<Col xl={12}></Col>
+			{/* <div className="splash" style={{ background }} /> */}
+			<Col xl={12}>{/* <Model /> */}</Col>
 			<Col xl={12}>
 				<div className="watermark_area">
 					<Watermark text="PRODUCT" />

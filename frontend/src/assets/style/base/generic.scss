@@ -1,82 +1,82 @@
 ﻿@use 'variables' as *;
 
 body {
-  will-change: background-color;
-  background-color: $theme-primary-body-bg-color;
-  transition: background-color 0.2s ease-out;
+	will-change: background-color;
+	background-color: $theme-primary-body-bg-color;
+	transition: background-color 0.2s ease-out;
 
-  &.secondary-theme {
-    background-color: $theme-secondary-body-bg-color;
+	&.secondary-theme {
+		background-color: $theme-secondary-body-bg-color;
 
-    .dashboard-content {
-      color: $theme-primary-body-bg-color;
+		.dashboard-content {
+			color: $theme-primary-body-bg-color;
 
-      .title {
-        color: $theme-primary-body-bg-color !important;
-      }
+			.title {
+				color: $theme-primary-body-bg-color !important;
+			}
 
-      code {
-        background-color: $theme-secondary-code-bg-color;
-        color: #70E9FF;
-      }
+			code {
+				background-color: $theme-secondary-code-bg-color;
+				color: #70e9ff;
+			}
 
-      hr {
-        background-color: rgba(255, 255, 255, 0.15);
-      }
-    }
-  }
+			hr {
+				background-color: rgba(255, 255, 255, 0.15);
+			}
+		}
+	}
 }
 
 svg {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 .title {
-  color: $color-hero-is-dark;
-  font-weight: 700;
+	color: $color-hero-is-dark;
+	font-weight: 700;
 
-  @include renderTabletDevice {
-    font-size: 1.75em;
-  }
+	@include renderTabletDevice {
+		font-size: 1.75em;
+	}
 
-  @include renderMobileDevice {
-    font-size: 1.5em;
-  }
+	@include renderMobileDevice {
+		font-size: 1.5em;
+	}
 }
 
 code {
-  background-color: $theme-secondary-code-bg-color;
-  color: #70E9FF;
-  padding: 0.25rem 0.5rem;
-  border-radius: 3px;
-  font-size: 87.5%;
+	background-color: $theme-secondary-code-bg-color;
+	color: #70e9ff;
+	// padding: 0.25rem 0.5rem;
+	border-radius: 3px;
+	font-size: 87.5%;
 }
 
 .view-wrapper {
-  min-height: 875px;
-  padding-top: $navbar-height;
+	min-height: 875px;
+	padding-top: $navbar-height;
 }
 
 .is-132x132 {
-  width: 132px;
-  height: 132px;
+	width: 132px;
+	height: 132px;
 }
 
 .subtitle {
-  color: $color-hero-is-dark;
-  font-size: 1.6em;
-  letter-spacing: 0.01em;
+	color: $color-hero-is-dark;
+	font-size: 1.6em;
+	letter-spacing: 0.01em;
 
-  @include renderTabletDevice {
-    font-size: 1.35em;
-  }
+	@include renderTabletDevice {
+		font-size: 1.35em;
+	}
 
-  @include renderMobileDevice {
-    font-size: 1.125em;
-  }
+	@include renderMobileDevice {
+		font-size: 1.125em;
+	}
 }
 
 .is-horizontal-center {
-  align-items: center;
-  justify-content: center;
+	align-items: center;
+	justify-content: center;
 }

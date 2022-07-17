@@ -8,3 +8,4 @@ export { default as AnimatedText } from './AnimatedText';
 export { default as Button } from './Button';
 export { default as Watermark } from './Watermark';
 export { default as Image } from './Image';
+export { default as MotionDiv } from './MotionDiv';
