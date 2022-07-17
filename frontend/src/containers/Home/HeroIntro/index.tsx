@@ -1,7 +1,9 @@
 import { Col, Row } from 'antd';
 import { motion } from 'framer-motion';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { AnimatedText, Button, Watermark } from '../../../components';
 import './styles.scss';
+import AnimatedCharacter from './AnimatedCharacter';
 // import Model from '../../../assets/modal/model';
 
 const HeroIntro = () => {
@@ -36,10 +38,19 @@ const HeroIntro = () => {
 	// const hue = (h: number) => `hsl(${h}, 100%, 50%)`;
 	// const background = `linear-gradient(306deg, ${hue(340)}, ${hue(10)})`;
 
+	// function Rig() {
+	// 	return useFrame((state) => {
+	// 		state.camera.position.x = THREE.MathUtils.lerp(state.camera.position.x, 1 + state.mouse.x / 4, 0.075);
+	// 		state.camera.position.y = THREE.MathUtils.lerp(state.camera.position.y, 1.5 + state.mouse.y / 4, 0.075);
+	// 	});
+	// }
+
 	return (
 		<Row className="hero_intro" align="middle">
 			{/* <div className="splash" style={{ background }} /> */}
-			<Col xl={12}>{/* <Model /> */}</Col>
+			<Col xl={12} style={{ height: '100%' }}>
+				<AnimatedCharacter />
+			</Col>
 			<Col xl={12}>
 				<div className="watermark_area">
 					<Watermark text="PRODUCT" />
