@@ -40,10 +40,10 @@ const SolutionBlock = () => {
 				</div>
 				<Row justify="center" gutter={10}>
 					<Col className="solution_container" xl={20}>
-						<p>
+						<div>
 							<h1>GREAT SOLUTIONS</h1>
 							<h1>TRAILORED TO YOUR BUSINESS</h1>
-						</p>
+						</div>
 						<Row gutter={[10, 10]} className="solution_card_container">
 							<Col xl={12}>
 								<MotionDiv className="solution_card">
