@@ -1,7 +1,10 @@
-export { default as Alert } from "./Alert";
-export { default as Footer } from "./Footer";
-export { default as Navbar } from "./NavBar";
-export { default as MetaInfo } from "./MetaInfo";
-export { default as BackToTop } from "./BackToTop";
-export { default as NotFound404 } from "./NotFound404";
-export { default as AnimatedText } from "./AnimatedText";
+export { default as Alert } from './Alert';
+export { default as Footer } from './Footer';
+export { default as Navbar } from './NavBar';
+export { default as MetaInfo } from './MetaInfo';
+export { default as BackToTop } from './BackToTop';
+export { default as NotFound404 } from './NotFound404';
+export { default as AnimatedText } from './AnimatedText';
+export { default as Button } from './Button';
+export { default as Watermark } from './Watermark';
+export { default as Image } from './Image';

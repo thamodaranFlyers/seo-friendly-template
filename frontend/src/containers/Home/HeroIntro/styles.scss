@@ -1,6 +1,7 @@
 .hero_intro {
-	height: 100vh;
-	background: #14133b;
+	position: relative;
+	height: 80vh;
+	// background: #14133b;
 	h1 {
 		font-size: 3rem;
 		font-weight: 700;
@@ -11,7 +12,6 @@
 		// -webkit-background-clip: text;
 		// -webkit-text-fill-color: transparent;
 	}
-
 	h2 {
 		font-size: 50px;
 		font-weight: 400;
@@ -21,5 +21,13 @@
 	}
 	p {
 		margin: 0;
+	}
+	.button_area {
+		padding-top: 20px;
+	}
+	.watermark_area {
+		position: absolute;
+		top: 0;
+		left: -25%;
 	}
 }

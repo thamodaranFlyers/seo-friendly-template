@@ -1,0 +1,16 @@
+.watermark {
+	// position: absolute;
+	// top: 0;
+	// left: -25%;
+	opacity: 0.1;
+	z-index: 99;
+	color: black;
+	font-size: 6rem;
+	font-weight: 600;
+	cursor: default;
+	user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}

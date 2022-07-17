@@ -1,8 +1,9 @@
-import { type FunctionComponent } from "react";
-import { MetaInfo } from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
-import { Col, Row } from "antd";
-import HeroIntro from "./HeroIntro";
+import { type FunctionComponent } from 'react';
+import { MetaInfo } from '../../components';
+import { getRouteMetaInfo } from '../../config/routes.config';
+import { Col, Row } from 'antd';
+import HeroIntro from './HeroIntro';
+import SolutionBlock from './SolutionBlock';
 // import Feature from "./Feature";
 // import Package from "./Package";
 // import ReactIcon from "./ReactIcon";
@@ -34,9 +35,10 @@ import HeroIntro from "./HeroIntro";
 const Home: FunctionComponent = () => {
 	return (
 		<Row className="view-wrapper home_container">
-			<MetaInfo {...getRouteMetaInfo("Home")} />
+			<MetaInfo {...getRouteMetaInfo('Home')} />
 			<Col xl={24}>
 				<HeroIntro />
+				<SolutionBlock />
 			</Col>
 			{/* <section className="hero is-dark">
       <div className="hero-body">

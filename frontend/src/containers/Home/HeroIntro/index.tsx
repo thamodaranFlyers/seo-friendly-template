@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd';
 import { motion } from 'framer-motion';
-import { AnimatedText } from '../../../components';
+import { AnimatedText, Button, Watermark } from '../../../components';
 import './styles.scss';
 
 const HeroIntro = () => {
@@ -36,11 +36,19 @@ const HeroIntro = () => {
 		<Row className="hero_intro" align="middle">
 			<Col xl={12}></Col>
 			<Col xl={12}>
+				<div className="watermark_area">
+					<Watermark text="PRODUCT" />
+				</div>
 				<motion.div initial="hidden" animate="visible" variants={container}>
 					<div className="container">
 						{placeholderText.map((item, index) => {
 							return <AnimatedText {...item} key={index} />;
 						})}
+						<Row>
+							<Col xl={8} className="button_area">
+								<Button onClick={() => console.log('onclick')}>Contact Us</Button>
+							</Col>
+						</Row>
 					</div>
 				</motion.div>
 			</Col>
