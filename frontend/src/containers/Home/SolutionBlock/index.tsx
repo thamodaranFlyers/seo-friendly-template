@@ -4,34 +4,6 @@ import { Image, MotionDiv, Watermark } from '../../../components';
 import './styles.scss';
 
 const SolutionBlock = () => {
-	const placeholderText = [
-		{ type: 'heading1', text: 'BUSINESS' },
-		{
-			type: 'heading1',
-			text: 'FROM IDEA TO',
-		},
-		{
-			type: 'heading1',
-			text: 'LAUNCHING.',
-		},
-		{
-			type: 'paragraph',
-			text: 'As far as we might be concerned, making an extraordinary',
-		},
-		{
-			type: 'paragraph',
-			text: 'impact on the world is a big deal.',
-		},
-	];
-
-	const container = {
-		visible: {
-			transition: {
-				staggerChildren: 0.025,
-			},
-		},
-	};
-
 	return (
 		<Row className="solution_block" align="middle">
 			<Col xl={24}>

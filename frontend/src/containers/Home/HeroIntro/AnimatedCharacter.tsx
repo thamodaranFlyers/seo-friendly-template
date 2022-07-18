@@ -1,5 +1,8 @@
 import { Suspense } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import {
+	Canvas,
+	// useFrame
+} from '@react-three/fiber';
 import Model from '../../../assets/modal/modal';
 
 const AnimatedCharacter = () => {

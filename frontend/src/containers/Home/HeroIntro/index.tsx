@@ -1,9 +1,8 @@
 import { Col, Row } from 'antd';
-import { motion } from 'framer-motion';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { AnimatePresence, motion } from 'framer-motion';
 import { AnimatedText, Button, Watermark } from '../../../components';
-import './styles.scss';
 import AnimatedCharacter from './AnimatedCharacter';
+import './styles.scss';
 // import Model from '../../../assets/modal/model';
 
 const HeroIntro = () => {
@@ -48,13 +47,26 @@ const HeroIntro = () => {
 	return (
 		<Row className="hero_intro" align="middle">
 			{/* <div className="splash" style={{ background }} /> */}
-			<Col xl={12} style={{ height: '100%' }}>
-				<AnimatedCharacter />
+			<Col xl={12} sm={0} xs={0} style={{ height: '100%' }}>
+				<AnimatePresence>
+					<motion.div
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{
+							duration: 1.5,
+							// type: 'spring',
+						}}
+						style={{ height: '100%', width: '100%' }}>
+						<AnimatedCharacter />
+					</motion.div>
+				</AnimatePresence>
 			</Col>
-			<Col xl={12}>
-				<div className="watermark_area">
-					<Watermark text="PRODUCT" />
-				</div>
+			<Col xl={12} sm={24} xs={24}>
+				<AnimatePresence>
+					<div className="watermark_area">
+						<Watermark text="PRODUCT" />
+					</div>
+				</AnimatePresence>
 				<motion.div initial="hidden" animate="visible" variants={container}>
 					<div className="container">
 						{placeholderText.map((item, index) => {
